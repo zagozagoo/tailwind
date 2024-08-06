@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Card from './components/Card'
 import Footer from './components/Footer'
+import NavBar from './components/NavBar';
 
 function App() {
   const [isCor1, setIsCor1] = useState(true);
@@ -12,6 +13,9 @@ function App() {
 
   return (
     <>
+        <div className='min-w-full'>
+          <NavBar />
+        </div>
       <div className="min-h-screen flex flex-col">
         <main className="flex-grow">
           <button
