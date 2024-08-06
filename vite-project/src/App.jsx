@@ -4,7 +4,6 @@ import Card from './components/Card'
 import Footer from './components/Footer'
 import NavBar from './components/NavBar';
 import Table from './components/Table';
-// import Alert from './components/Alert';
 
 function App() {
   const [isCor1, setIsCor1] = useState(true);
@@ -41,8 +40,6 @@ function App() {
           </div>
 
           <div className="p-6">
-            {/* <Alert type="success" message="Dados carregados com sucesso!" />
-            <Alert type="error" message="Ocorreu um erro ao carregar os dados." /> */}
             <Table />
         </div> 
         </main>
