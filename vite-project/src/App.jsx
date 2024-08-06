@@ -3,6 +3,8 @@ import './App.css';
 import Card from './components/Card'
 import Footer from './components/Footer'
 import NavBar from './components/NavBar';
+import Table from './components/Table';
+// import Alert from './components/Alert';
 
 function App() {
   const [isCor1, setIsCor1] = useState(true);
@@ -37,6 +39,12 @@ function App() {
               imageUrl="https://www.singulart.com/blog/wp-content/uploads/2024/04/Sky-is-the-Limit.jpg"
             />
           </div>
+
+          <div className="p-6">
+            {/* <Alert type="success" message="Dados carregados com sucesso!" />
+            <Alert type="error" message="Ocorreu um erro ao carregar os dados." /> */}
+            <Table />
+        </div> 
         </main>
         <div className='min-w-full'>
           <Footer />
